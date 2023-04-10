@@ -1,11 +1,15 @@
 import { combineReducers } from '@reduxjs/toolkit';
 
 import { EReducersNames } from '@core/constants/reduxStore';
-import mainSlice from './mainAppState';
+
+import characterDetails from './characterDetails';
+import characters from './characters';
 
 const rootReducer = combineReducers({
-  [EReducersNames.MAIN_APP_STATE]: mainSlice,
-
+  [EReducersNames.CHARACTERS]: characters,
+  [EReducersNames.CHARACTER_DETAILS]: characterDetails,
 });
+
+export type TRootState = ReturnType<typeof rootReducer>;
 
 export default rootReducer;

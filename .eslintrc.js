@@ -33,6 +33,8 @@ module.exports = {
     'jsx-a11y',
     'react',
     'react-hooks',
+    'compat',
+    'sonarjs',
     'optimize-regex',
   ],
 
@@ -71,8 +73,6 @@ module.exports = {
     'react/jsx-props-no-spreading': OFF,
     // обязательное использование defaultProps в компоненте (отключено по результам голосования)
     'react/require-default-props': OFF,
-    // принудительная деструктуризация пропсов в теле компонентов кроме классов
-    'react/destructuring-assignment': [ERROR, 'always', { ignoreClassFields: true, destructureInSignature: 'ignore' }],
     // сортировка дефолтных пропсов в компоненте
     // 'react/jsx-sort-default-props': [ ERROR, { ignoreCase: false } ],
     // Переопределение входящих параметров

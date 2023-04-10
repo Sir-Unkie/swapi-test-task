@@ -27,6 +27,7 @@ module.exports = {
   resolve: {
     alias: {
       '@core': path.resolve(paths.appSrc, 'core'),
+      '@mui/styled-engine': '@mui/styled-engine-sc',
     },
     extensions: ['.tsx', '.ts', '.js'],
     modules: ['node_modules'],

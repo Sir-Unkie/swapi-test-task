@@ -1,5 +1,7 @@
+import { colors } from '@mui/material';
 import styled from 'styled-components';
 
 export const MainContainer = styled.main`
-  margin: 0 20px;
+  min-height: 100vh;
+  background-color: ${colors.grey.A100};
 `;
